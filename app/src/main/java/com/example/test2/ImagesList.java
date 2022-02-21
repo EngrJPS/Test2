@@ -1,6 +1,7 @@
 package com.example.test2;
 
 public class ImagesList {
+
     private String imageURL;
 
     public ImagesList() {

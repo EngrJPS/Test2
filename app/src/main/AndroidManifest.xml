@@ -13,19 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test2">
         <activity
-            android:name=".producer_main_orders"
-            android:exported="false" />
-        <activity
-            android:name=".producer_edit_product"
-            android:exported="false" />
-        <activity
-            android:name=".producer_product_details"
-            android:exported="false" />
-        <activity
-            android:name=".producer_main_menu"
-            android:exported="false" />
-        <activity
-            android:name=".producer_add_product"
+            android:name=".ChangePasswordActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

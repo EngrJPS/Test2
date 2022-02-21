@@ -16,6 +16,8 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.service.autofill.UserData;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -107,25 +109,22 @@ public class StartActivity extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(StartActivity.this);
                 builder.setCancelable(true);
-                view = LayoutInflater.from(StartActivity.this).inflate(R.layout.select_image_layout, null);
-                RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
+                View mView = LayoutInflater.from(StartActivity.this).inflate(R.layout.select_image_layout, null);
+                RecyclerView recyclerView = mView.findViewById(R.id.recyclerView);
                 collectOldData();
                 recyclerView.setLayoutManager(new GridLayoutManager(StartActivity.this, 3));
                 recyclerView.setHasFixedSize(true);
                 imageRecyclerAdapter = new ImageRecyclerAdapter(imagesList, StartActivity.this);
                 recyclerView.setAdapter(imageRecyclerAdapter);
                 imageRecyclerAdapter.notifyDataSetChanged();
-                imageRecyclerAdapter = new ImageRecyclerAdapter(imagesList, StartActivity.this);
-                recyclerView.setAdapter(imageRecyclerAdapter);
-                imageRecyclerAdapter.notifyDataSetChanged();
-                Button openImage = view.findViewById(R.id.btnOpenImage);
+                Button openImage = mView.findViewById(R.id.btnOpenImage);
                 openImage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         openImage();
                     }
                 });
-                builder.setView(view);
+                builder.setView(mView);
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
             }
@@ -155,7 +154,7 @@ public class StartActivity extends AppCompatActivity {
 
     private void openImage() {
         Intent intent = new Intent();
-        intent.setType("image/");
+        intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, IMAGE_REQUEST);
     }
@@ -164,8 +163,8 @@ public class StartActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null){
+            imageUri = data.getData();
             if(storageTask != null && storageTask.isInProgress()){
-                imageUri = data.getData();
                 Toast.makeText(this, "Uploading is in progress", Toast.LENGTH_SHORT).show();
             }else{
                 uploadImage();
@@ -177,18 +176,18 @@ public class StartActivity extends AppCompatActivity {
         ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Uploading Image");
         progressDialog.show();
-        if(imageUri != null){
+        if(imageUri != null) {
             Bitmap bitmap = null;
-            try{
+            try {
                 bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
-            } catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             assert bitmap != null;
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 25,byteArrayOutputStream);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 25, byteArrayOutputStream);
             byte[] imageFiletoByte = byteArrayOutputStream.toByteArray();
-            final StorageReference imageReference = storageReference.child(usersData.getFullname()+System.currentTimeMillis()+".jpeg");
+            final StorageReference imageReference = storageReference.child(usersData.getFullname() + System.currentTimeMillis() + ".jpg");
             storageTask = imageReference.putBytes(imageFiletoByte);
             storageTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                 @Override
@@ -202,7 +201,7 @@ public class StartActivity extends AppCompatActivity {
             }).addOnCompleteListener(new OnCompleteListener<Uri>() {
                 @Override
                 public void onComplete(@NonNull Task<Uri> task) {
-                    if(task.isSuccessful()){
+                    if (task.isSuccessful()) {
                         Uri downloadUri = task.getResult();
                         String sDownloadUri = downloadUri.toString();
                         Map<String, Object> hashMap = new HashMap<>();
@@ -212,15 +211,15 @@ public class StartActivity extends AppCompatActivity {
                         profileImagesReference.push().setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()){
+                                if (task.isSuccessful()) {
                                     progressDialog.dismiss();
-                                }else{
+                                } else {
                                     progressDialog.dismiss();
                                     Toast.makeText(StartActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
-                    }else{
+                    } else {
                         Toast.makeText(StartActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
                     }
@@ -228,10 +227,35 @@ public class StartActivity extends AppCompatActivity {
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(StartActivity.this, e.getMessage(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StartActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                 }
             });
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.profile_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        switch(id){
+            case R.id.changePsw:
+                startActivity(new Intent(StartActivity.this, ChangePasswordActivity.class));
+                break;
+            case R.id.out:
+                firebaseAuth.signOut();
+                startActivity(new Intent(StartActivity.this, LoginActivity.class));
+                finish();
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 }
