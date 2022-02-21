@@ -10,9 +10,9 @@
     android:id="@+id/idRLhome">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idProductModel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/idProductModel"/>
+        android:layout_height="match_parent" />
 
     <ProgressBar
         android:id="@+id/progressBar5"

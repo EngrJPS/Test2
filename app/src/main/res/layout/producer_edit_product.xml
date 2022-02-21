@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".producer_edit_product">
+
+    <ImageView
+        android:id="@+id/imageEditProduct"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        tools:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageEditProduct"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/text_theme"
+            android:outlineAmbientShadowColor="@color/grey"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editProductName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Product Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="16sp"
+                android:paddingRight="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:met_baseColor="@color/white"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/text_theme"
+            android:outlineAmbientShadowColor="@color/grey"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Product Price per kg (₱)"
+                android:inputType="number"
+                android:paddingLeft="16sp"
+                android:paddingRight="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:met_baseColor="@color/white"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/text_theme"
+            android:outlineAmbientShadowColor="@color/grey"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editProductHarvest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Estimated Harvest Date"
+                android:inputType="text"
+                android:paddingLeft="16sp"
+                android:paddingRight="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:met_baseColor="@color/white"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/text_theme"
+            android:outlineAmbientShadowColor="@color/grey"
+            tools:targetApi="P">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Product Description"
+                android:inputType="text"
+                android:paddingLeft="16sp"
+                android:paddingRight="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:met_baseColor="@color/white"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonAddProduct"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_theme"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

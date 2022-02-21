@@ -3,17 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/userProfile"
-        android:title="User Profile"
-        />
-
-    <item
-        android:id="@+id/logOut"
-        android:title="Log Out"/>
-    <item
         android:id="@+id/app_bar_search"
         android:icon="@drawable/ic_search_black_24dp"
         android:title="Search"
         app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/userProfile"
+        android:title="User Profile" />
+    <item
+        android:id="@+id/orderCurrent"
+        android:title="My Orders" />
+    <item
+        android:id="@+id/logOut"
+        android:title="Log Out"/>
 
 </menu>

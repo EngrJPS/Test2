@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FF3C3C"
-    android:id="@+id/idRLSheet">
+    android:background="@color/primaryColor"
+    android:id="@+id/bsMyRLSheet">
 
     <TextView
-        android:id="@+id/idTVProductName"
+        android:id="@+id/bsMyProductName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -16,14 +16,14 @@
         android:padding="4dp"
         android:text="Product Name"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/idIVProduct"
+        android:id="@+id/bsMyImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@id/idTVProductName"
+        android:layout_below="@id/bsMyProductName"
         android:layout_centerVertical="true"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
@@ -33,59 +33,59 @@
         android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/idTVBusinessName"
+        android:id="@+id/bsMyProducerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idTVProductName"
+        android:layout_below="@id/bsMyProductName"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
-        android:layout_toRightOf="@id/idIVProduct"
+        android:layout_toEndOf="@id/bsMyImage"
         android:padding="3dp"
         android:text="Business Name"
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/idTVContact"
+        android:id="@+id/bsMyContactNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idTVBusinessName"
+        android:layout_below="@id/bsMyProducerName"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
-        android:layout_toRightOf="@id/idIVProduct"
+        android:layout_toEndOf="@id/bsMyImage"
         android:padding="3dp"
         android:text="Contact Number"
         android:textAllCaps="false"
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/idTVPrice"
+        android:id="@+id/bsMyProductPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idTVContact"
+        android:layout_below="@id/bsMyContactNumber"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
-        android:layout_toRightOf="@id/idIVProduct"
+        android:layout_toEndOf="@id/bsMyImage"
         android:padding="3dp"
         android:text="Price"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="18dp" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2"
-        android:layout_below="@id/idIVProduct">
+        android:layout_below="@id/bsMyImage">
 
         <Button
-            android:id="@+id/btnEditProduct"
+            android:id="@+id/bsMyEditProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -96,11 +96,11 @@
             android:fontFamily="sans-serif-medium"
             android:text="Edit Product"
             android:textAllCaps="false"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnView"
+            android:id="@+id/bsMyViewProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -111,7 +111,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="View Product"
             android:textAllCaps="false"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </LinearLayout>
