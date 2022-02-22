@@ -82,28 +82,40 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(task.isSuccessful()){
 
-                    Intent intent = new Intent(LoginActivity.this, StartActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-                    finish();
-//                    String uId = task.getResult().getUser().getUid();
-//
-//                    firebaseDatabase = FirebaseDatabase.getInstance();
-//                    firebaseDatabase.getReference().child(uId).child("gender").addListenerForSingleValueEvent(new ValueEventListener() {
-//                        @Override
-//                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-//                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                            startActivity(intent);
-//                            finish();
-//                        }
-//
-//                        @Override
-//                        public void onCancelled(@NonNull DatabaseError error) {
-//                            Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-//
-//                        }
-//                    });
+                    String uId = task.getResult().getUser().getUid();
+
+                    firebaseDatabase = FirebaseDatabase.getInstance();
+                    firebaseDatabase.getReference().child(uId).child("gender").addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            usersData = snapshot.getValue(UsersData.class);
+                            assert usersData != null;
+                            if(usersData.getGender().equals("Producer")){
+                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+
+                            }else if(usersData.getGender().equals("Logisitcs")){
+                                Intent intent = new Intent(LoginActivity.this, HomeActivityLogistic.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+
+                            }else{
+                                Intent intent = new Intent(LoginActivity.this, HomeActivityRetailer.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                            Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
                     
                 }else{
                     Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
