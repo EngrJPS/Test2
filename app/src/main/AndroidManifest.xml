@@ -13,6 +13,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test2">
         <activity
+            android:name=".HomeActivityRetailerOrders"
+            android:exported="false" />
+        <activity
+            android:name=".ProducerOrderDetailsPrint"
+            android:exported="false" />
+        <activity
+            android:name=".LogisticDeliveryDetailsPending"
+            android:exported="false" />
+        <activity
+            android:name=".LogisticDeliveryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderForm"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetails"
+            android:exported="false" />
+        <activity
+            android:name=".EditActivityProducer"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivityProducer"
+            android:exported="false" />
+        <activity
+            android:name=".ProducerOrderDetailsPending"
+            android:exported="false" />
+        <activity
+            android:name=".ProducerOrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivityProducerOrders"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivityLogistic"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivityRetailer"
+            android:exported="false" />
+        <activity
             android:name=".ChangePasswordActivity"
             android:exported="false" />
         <activity

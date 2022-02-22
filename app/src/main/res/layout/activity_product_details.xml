@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".producer_product_details">
+    tools:context=".ProductDetails">
 
     <ScrollView
         android:layout_width="0dp"
@@ -17,7 +17,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/imageProductInfo"
@@ -93,12 +93,12 @@
             <TextView
                 android:id="@+id/productDescription"
                 android:layout_width="380dp"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Product Description:"
                 android:textAlignment="center"
                 android:textColor="@color/primaryColor"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.323"
                 app:layout_constraintStart_toStartOf="@+id/description"

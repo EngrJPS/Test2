@@ -11,11 +11,8 @@
         android:id="@+id/userProfile"
         android:title="User Profile" />
     <item
-        android:id="@+id/myProducts"
-        android:title="My Products" />
-    <item
-        android:id="@+id/orderCurrent"
-        android:title="Product Orders" />
+        android:id="@+id/orderProduct"
+        android:title="My Orders" />
     <item
         android:id="@+id/logOut"
         android:title="Log Out"/>

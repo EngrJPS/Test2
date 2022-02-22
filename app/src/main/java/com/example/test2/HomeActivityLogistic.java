@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class producer_product_details extends AppCompatActivity {
+public class HomeActivityLogistic extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.producer_product_details);
+        setContentView(R.layout.activity_home_logistic);
     }
 }

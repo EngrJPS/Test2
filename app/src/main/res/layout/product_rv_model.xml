@@ -12,11 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/primaryColor">
+
         <ImageView
+            android:id="@+id/imgView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/imgView"/>
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/tvProductName"

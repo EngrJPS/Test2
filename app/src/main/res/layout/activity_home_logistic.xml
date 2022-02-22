@@ -1,48 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".producer_main_menu"
-    android:id="@+id/producerMainOrders">
+    tools:context=".HomeActivityLogistic"
+    android:id="@+id/logisticMainDelivery">
 
     <Button
-        android:id="@+id/producerCurrentOrder"
-        android:layout_width="205dp"
+        android:id="@+id/logisticPendingDelivery"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/producerOrderRecycle"
+        android:layout_above="@id/logisticDeliveryRecycler"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Pending Orders"
+        android:text="Pending Deliveries"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/producerFinishedOrder"
-        android:layout_width="205dp"
+        android:id="@+id/logisticCurrentDelivery"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/producerOrderRecycle"
+        android:layout_above="@id/logisticDeliveryRecycler"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/logisticPendingDelivery"
+        android:text="Current Deliveries"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/logisticFinishedDelivery"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logisticDeliveryRecycler"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@id/producerCurrentOrder"
-        android:text="Accepted Orders"
+        android:layout_toEndOf="@id/logisticCurrentDelivery"
+        android:text="Finished Deliveries"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/producerOrderRecycle"
+        android:id="@+id/logisticDeliveryRecycler"
         android:layout_width="match_parent"
         android:layout_height="660dp"
         android:layout_alignParentBottom="true" />
 
     <ProgressBar
-        android:id="@+id/producerOrderProgress"
+        android:id="@+id/logisticDeliverProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:indeterminate="true"
         android:indeterminateDrawable="@color/primaryColor"
         android:visibility="gone"/>
-
 </RelativeLayout>
