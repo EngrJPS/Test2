@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_add_producer.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_edit.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_edit_producer.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_home_producer_orders.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_producer_order_details.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_producer_order_details_pending.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/THESIS/Test2/app/src/main/res/layout/activity_producer_order_details_print.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable-v24/button_theme.xml" value="0.1385" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable-v24/slight_red_boarder.xml" value="0.1385" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable-v24/text_theme.xml" value="0.1385" />
