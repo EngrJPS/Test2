@@ -7,25 +7,78 @@
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable-v24/slight_red_boarder.xml" value="0.1385" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable-v24/text_theme.xml" value="0.1385" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/background.xml" value="0.1415" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/background_shape.xml" value="0.142" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/camerashape.xml" value="0.142" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/grey_boarder.xml" value="0.1415" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_add.xml" value="0.1385" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.1805" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.142" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.142" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1805" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_baseline_restaurant_menu_24.xml" value="0.1805" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.1805" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_chef_hat_and_fork.xml" value="0.2075" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_orders_24.xml" value="0.142" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_post_product_24.xml" value="0.142" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/ic_products_24.xml" value="0.1805" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/menu_item_color.xml" value="0.142" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/pic_background.xml" value="0.1415" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/red_boarder.xml" value="0.1415" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/drawable/white_boarder.xml" value="0.1415" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_add.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_add_producer.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_edit.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_edit_producer.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_forget_password.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_home_logistic.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_home_retailer.xml" value="0.1" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_logistic_delivery_details.xml" value="0.1" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_order_form.xml" value="0.22" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_producer_order_details.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_producer_order_details_pending.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_producer_order_details_print.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_producer_order_product.xml" value="0.1859375" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_details.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_ordertobe_prepared.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_ordertobe_prepared_view.xml" value="0.14266304347826086" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_panel_bottom_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_post.xml" value="0.22" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_prepared_order.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_product_prepared_order_view.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_reg.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_retailer_product_panel_bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_update_delete_product.xml" value="0.19047619047619047" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/bar_layout.xml" value="0.14938875305623472" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/bottom_sheet_dialog_order.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/bottom_sheet_dialog_producer.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/camerashape.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/fragment_product_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/fragment_product_orders.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/fragment_product_pendingorders.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/fragment_product_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/image_layout.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/loginactivity.xml" value="0.25" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/main_color_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/main_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/order_rv_model.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/producer_order_products.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/producer_orders.xml" value="0.18" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/product_menu_update_delete.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/product_orderstobeprepared_view.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/product_ordertobeprepared.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/product_preparedorder.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/product_preparedorderview.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/product_rv_model.xml" value="0.33" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/profile_bar_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/registeactivity.xml" value="0.22" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/register_activity_logistic.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/register_activity_producer.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/retailer_myaccount.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/retailer_myaccount_dialog.xml" value="0.16" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/retailer_orderdetails.xml" value="0.25" />
@@ -34,18 +87,23 @@
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/retailer_shopinfo.xml" value="0.18" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/retailer_shoplist.xml" value="0.2" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/layout/select_image_layout.xml" value="0.22" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/menu/logout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/menu/menu_main.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/menu/producer_menu.xml" value="0.128125" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/menu/profile_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/menu/retailer_menu.xml" value="0.7067961165048544" />
         <entry key="..\:/Users/Ismael/AndroidStudioProjects/Test2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1385" />
+        <entry key="..\:/Users/Ismael/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/drawable-v24/button_theme.xml" value="0.157" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/drawable-v24/shape_round.xml" value="0.157" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/drawable-v24/text_theme.xml" value="0.1725" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/drawable/ic_add.xml" value="0.157" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/drawable/producer_order_details_current.xml" value="0.1965" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_add.xml" value="0.25" />
-        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_add_producer.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_add_producer.xml" value="0.25" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_change_password.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_edit.xml" value="0.33" />
-        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_edit_producer.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_edit_producer.xml" value="0.3202247191011236" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_forget_password.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_home_logistic.xml" value="0.2598958333333333" />
@@ -62,8 +120,8 @@
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_producer_order_details_pending.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_producer_order_details_print.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_producer_product_rv_model.xml" value="0.2598958333333333" />
-        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_product_details.xml" value="0.2598958333333333" />
-        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_start.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_product_details.xml" value="0.25" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/activity_start.xml" value="0.22" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/bar_layout.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.25" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/bottom_sheet_dialog_order.xml" value="0.2598958333333333" />
@@ -91,7 +149,9 @@
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/producer_product_rv_model.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/product_rv_model.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/profile_bar_layout.xml" value="0.19114583333333332" />
-        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/registeactivity.xml" value="0.22" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/registeactivity.xml" value="0.33" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/register_activity_logistic.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/register_activity_producer.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/retailer_myaccount.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/retailer_myaccount_dialog.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/user/Desktop/Thesis/Test2/app/src/main/res/layout/retailer_order_form.xml" value="0.33" />

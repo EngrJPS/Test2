@@ -3,6 +3,7 @@ package com.example.test2;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -50,14 +51,22 @@ public class HomeActivity extends AppCompatActivity implements ProductRVAdapter.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+
         productRV = findViewById(R.id.idProductModel);
         loadingPB = findViewById(R.id.progressBar5);
         addFAB = findViewById(R.id.idBtnAdd);
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("Products");
+
         productModels = new ArrayList<>();
         productRVAdapter = new ProductRVAdapter(productModels, this, this);
         productRV.setAdapter(productRVAdapter);
+
+
         addFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +79,7 @@ public class HomeActivity extends AppCompatActivity implements ProductRVAdapter.
 
     private void getAllProducts() {
 
-        productModels. clear();
+        productModels.clear();
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {

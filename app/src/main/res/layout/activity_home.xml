@@ -9,10 +9,15 @@
     tools:context=".HomeActivity"
     android:id="@+id/idRLhome">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idProductModel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:listitem="@layout/product_rv_model" />
 
     <ProgressBar
         android:id="@+id/progressBar5"

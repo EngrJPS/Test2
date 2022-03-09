@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
 
     <item
-        android:id="@+id/app_bar_search"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title="Search"
-        app:actionViewClass="android.widget.SearchView" />
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+
     <item
-        android:id="@+id/userProfile"
-        android:title="User Profile" />
+        android:id="@+id/Cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"/>
+
     <item
-        android:id="@+id/orderCurrent"
-        android:title="My Orders" />
+        android:id="@+id/Order"
+        android:title="Orders"
+        android:icon="@drawable/ic_orders_24"/>
+
     <item
-        android:id="@+id/logOut"
-        android:title="Log Out"/>
+        android:id="@+id/Track"
+        android:title="Track"
+        android:icon="@drawable/ic_baseline_access_time_24"/>
+
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
 
 </menu>

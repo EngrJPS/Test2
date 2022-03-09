@@ -102,7 +102,7 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="200dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/text_theme"
                 android:outlineAmbientShadowColor="@color/grey"
@@ -163,7 +163,7 @@
         </LinearLayout>
 
         <ProgressBar
-            android:id="@+id/progressBar4"
+            android:id="@+id/editPB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

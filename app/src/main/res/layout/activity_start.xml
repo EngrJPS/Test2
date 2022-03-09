@@ -9,6 +9,10 @@
     android:background="@drawable/pic_background">
 
     <include
+        android:id="@+id/toolbar1"
+        layout="@layout/bar_layout"/>
+
+    <include
         android:id="@+id/toolbar"
         layout="@layout/profile_bar_layout"/>
 

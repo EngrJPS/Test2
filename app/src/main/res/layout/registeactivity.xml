@@ -6,215 +6,352 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RegisterActivity"
     android:background="@drawable/pic_background">
+
     <include
         android:id="@+id/toolbar"
         layout="@layout/bar_layout"/>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/barReg"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
-        android:layout_centerVertical="true"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Create New Account"
+        android:textAlignment="center"
+        android:textColor="@color/primaryColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
 
-        <TextView
-            android:id="@+id/barReg"
+    <ScrollView
+        android:layout_width="348dp"
+        android:layout_height="579dp"
+        android:layout_below="@+id/barReg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:outlineAmbientShadowColor="@color/white"
-            android:outlineSpotShadowColor="@color/white"
-            android:text="Create New Account"
-            android:textAlignment="center"
-            android:textColor="@color/primaryColor"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/grey_boarder"
-            android:elevation="30dp"
-            android:outlineAmbientShadowColor="@color/grey"
-            tools:targetApi="p">
-
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/txtName"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTint="@color/white"
-                android:hint="Fullname"
-                android:inputType="textPersonName"
-                android:paddingLeft="16sp"
-                android:paddingRight="16sp"
-                android:textColorHint="@color/primaryColor"
-                android:textStyle="bold"
-                app:met_baseColor="@color/primaryColor"
-                app:met_floatingLabel="normal"
-                app:met_textColor="@color/primaryColor" />
-        </FrameLayout>
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="30dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="20sp"
-            android:background="@drawable/grey_boarder"
-            android:elevation="10dp"
-            android:outlineAmbientShadowColor="@color/grey"
-            tools:targetApi="p">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:hint="Fullname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColorHint="@color/primaryColor"
+                    android:textStyle="bold"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="@color/primaryColor" />
+            </FrameLayout>
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/txtEmail"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTint="@color/white"
-                android:hint="Email Address"
-                android:inputType="textEmailAddress"
-                android:paddingLeft="16sp"
-                android:paddingRight="16sp"
-                android:textColorHint="@color/primaryColor"
-                android:textStyle="bold"
-                app:met_baseColor="@color/primaryColor"
-                app:met_floatingLabel="normal"
-                app:met_textColor="@color/primaryColor" />
-        </FrameLayout>
+                android:layout_height="60dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColorHint="@color/primaryColor"
+                    android:textStyle="bold"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="@color/primaryColor"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"/>
+            </FrameLayout>
 
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="20sp"
-            android:background="@drawable/grey_boarder"
-            android:elevation="10dp"
-            android:outlineAmbientShadowColor="@color/grey"
-            tools:targetApi="p">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/txtPass"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTint="@color/white"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:paddingLeft="16sp"
-                android:paddingRight="16sp"
-                android:textColorHint="@color/primaryColor"
-                android:textStyle="bold"
-                app:met_baseColor="@color/primaryColor"
-                app:met_floatingLabel="normal"
-                app:met_textColor="@color/primaryColor" />
-        </FrameLayout>
+                android:layout_height="60dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColorHint="@color/primaryColor"
+                    android:textStyle="bold"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="@color/primaryColor"
+                    android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"/>
+            </FrameLayout>
 
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="20sp"
-            android:background="@drawable/grey_boarder"
-            android:elevation="10dp"
-            android:outlineAmbientShadowColor="@color/grey"
-            tools:targetApi="p">
-
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/txtPhone"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTint="@color/white"
-                android:hint="Phone"
-                android:inputType="textPhonetic"
-                android:paddingLeft="16sp"
-                android:paddingRight="16sp"
-                android:textColorHint="@color/primaryColor"
-                android:textStyle="bold"
-                app:met_baseColor="@color/primaryColor"
-                app:met_floatingLabel="normal"
-                app:met_textColor="@color/primaryColor" />
+                android:layout_height="60dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
 
-        </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-        <RadioGroup
-            android:id="@+id/radioButtons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:background="@drawable/red_boarder"
-            android:orientation="horizontal"
-            android:padding="10dp">
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/CountryCode"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:ccp_textGravity="CENTER"
+                        app:ccpDialog_textColor="@color/primaryColor">
+                    </com.hbb20.CountryCodePicker>
 
-            <RadioButton
-                android:id="@+id/male"
-                android:layout_width="wrap_content"
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/white"
+                        android:hint="Phone"
+                        android:inputType="textPhonetic"
+                        android:paddingLeft="16sp"
+                        android:paddingRight="16sp"
+                        android:textColorHint="@color/primaryColor"
+                        android:textStyle="bold"
+                        app:met_baseColor="@color/primaryColor"
+                        app:met_floatingLabel="normal"
+                        app:met_textColor="@color/primaryColor"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtHandSNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:hint="House/Street no."
+                    android:inputType="text|textMultiLine"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColorHint="@color/primaryColor"
+                    android:textStyle="bold"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="@color/primaryColor"
+                    android:drawableLeft="@drawable/ic_baseline_house_24"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:hint="Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColorHint="@color/primaryColor"
+                    android:textStyle="bold"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="@color/primaryColor"
+                    android:drawableLeft="@drawable/ic_baseline_house_24"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/grey_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColorHint="@color/primaryColor"
+                    android:textStyle="bold"
+                    app:met_baseColor="@color/primaryColor"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="@color/primaryColor" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/white"
-                android:text="Producer"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:targetApi="lollipop"
-                android:layout_weight="1"/>
+                android:text="Cluster"
+                android:textSize="14sp" />
 
-            <RadioButton
-                android:id="@+id/female"
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/Statee"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/white"
-                android:text="Logistics"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:targetApi="lollipop"
-                android:layout_weight="1"/>
+                android:layout_marginTop="5dp"
+                android:entries="@array/State" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="14dp"
-                android:textColor="@color/white"
-                android:text="Costumer"
-                android:buttonTint="@color/white"
-                android:id="@+id/other"
-                tools:targetApi="lollipop"
-                android:layout_weight="1"/>
+                android:layout_marginTop="11dp"
+                android:text="Barangay" />
 
-        </RadioGroup>
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:indeterminateTint="@color/primaryColor"
-            android:visibility="gone"
-            tools:targetApi="lollipop" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="120dp"
-            android:background="@drawable/red_boarder"
-            android:elevation="10dp"
-            android:outlineAmbientShadowColor="@color/grey"
-            tools:targetApi="p">
-
-            <Button
-                android:id="@+id/btnRegister"
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/Citys"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="?attr/selectableItemBackground"
-                android:fontFamily="sans-serif-medium"
-                android:text="Register"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </FrameLayout>
-    </LinearLayout>
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:id="@+id/radioButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/red_boarder"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/white"
+                    android:text="Producer"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/white"
+                    android:text="Logistics"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/white"
+                    android:text="Costumer"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+
+            </RadioGroup>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/primaryColor"
+                android:visibility="gone"
+                tools:targetApi="lollipop" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/red_boarder"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@color/grey"
+                tools:targetApi="p">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Register"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -28,7 +28,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:background="@color/grey" />
+                tools:background="@drawable/defaultpic" />
 
             <TextView
                 android:id="@+id/textProductName"
@@ -61,7 +61,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textProductName" />
 
             <TextView
-                android:id="@+id/rating"
+                android:id="@+id/textProductDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -85,13 +85,13 @@
                 android:textColor="@color/primaryColor"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/rating"
+                app:layout_constraintEnd_toEndOf="@+id/textProductDate"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/rating"
-                app:layout_constraintTop_toBottomOf="@+id/rating" />
+                app:layout_constraintStart_toStartOf="@+id/textProductDate"
+                app:layout_constraintTop_toBottomOf="@+id/textProductDate" />
 
             <TextView
-                android:id="@+id/productDescription"
+                android:id="@+id/textProductDescription"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -117,7 +117,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/description"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/description"
-                app:layout_constraintTop_toBottomOf="@+id/productDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/textProductDescription" />
 
             <TextView
                 android:id="@+id/textShopName"
@@ -172,6 +172,7 @@
                 app:layout_constraintTop_toBottomOf="@id/textShopContactNumber" />
 
             <Button
+                android:id="@+id/buttonOrder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
